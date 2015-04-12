@@ -7,5 +7,5 @@ This project is for showcasing some of my automation skills. Its does not have a
 - run "mvn surefire-report:report" 
 
 ###html report
--The cucumber html report is generated at "target/html" folder 
--the surefire html report is generayed at "target/site" folder
+- The cucumber html report is generated at "target/html" folder 
+- The surefire html report is generayed at "target/site" folder
