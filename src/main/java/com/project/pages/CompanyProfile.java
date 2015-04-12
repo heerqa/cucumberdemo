@@ -30,6 +30,7 @@ public class CompanyProfile {
 	
 	public void editCompName() throws Throwable{
 		String newname="name"+CommonMethods.uniqueval();
+		compName.clear();
 		compName.sendKeys(newname);
 		saveBtn.click();
 	}
