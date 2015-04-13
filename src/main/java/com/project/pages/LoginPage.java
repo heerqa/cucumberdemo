@@ -1,16 +1,13 @@
 package com.project.pages;
 
-import org.openqa.selenium.By;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.project.common.CommonMethods;
-import com.thoughtworks.selenium.webdriven.commands.Click;
-
 public class LoginPage {
-	
+	static final Logger logger = Logger.getLogger(LoginPage.class);
 	WebDriver driver;
 	
 	WebElement titleLoginPage;
@@ -60,14 +57,20 @@ public class LoginPage {
 	}
 	
 	
-	public void login(String strEail, String strPass){
-		
-		
+	public void login(String strEail, String strPass) throws Throwable{
+		logger.info("Login method is called");
 		setEmail(strEail);
+		logger.info("enter email");
+		
 		setPassword(strPass);
+		logger.info("enter password");
+		
 		
 		clickSubmitBtn();
+		logger.info("click submit button");
 		
+		
+		Thread.sleep(4000);
 	}
 
 
