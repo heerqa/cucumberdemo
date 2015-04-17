@@ -4,6 +4,7 @@ package com.project.common;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.By;
@@ -18,10 +19,9 @@ public class CommonMethods {
 	
 
 
-	/*public CommonMethods(WebDriver e) {
-        this.driver = e;
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }*/
+	public CommonMethods() {
+   
+    }
 
     
 	
@@ -128,36 +128,39 @@ public class CommonMethods {
 				
 	}
 	
-	public static String setupDriver(){
+	public static WebDriver createDriver(){
 	   	
     	String browser =EnvSetUP.getInstance().getproperties("browser") ;
     	
     	if (browser.equals("firefox")) {
-    		BrowserUtils.getInstance().setDriver(Browser.Browsers.FIREFOX.browser());
+    		driver=BrowserUtils.getInstance().setDriver(Browser.Browsers.FIREFOX.browser());
 			//return "firefox";
 		}
     	
 
     	if (browser.equals("chrome")) {
-    		BrowserUtils.getInstance().setDriver(Browser.Browsers.CHROME.browser());
+    		driver=BrowserUtils.getInstance().setDriver(Browser.Browsers.CHROME.browser());
     		//return "chrome";
 		}
         
     	if (browser.equals("ie")) {
-    		BrowserUtils.getInstance().setDriver(Browser.Browsers.IE.browser());
+    		driver=BrowserUtils.getInstance().setDriver(Browser.Browsers.IE.browser());
     		//return "ie";
 		}
     	
     	if (browser.equals("phantomjs")) {
-    		BrowserUtils.getInstance().setDriver(Browser.Browsers.PHANTOMJS.browser());
+    		driver=BrowserUtils.getInstance().setDriver(Browser.Browsers.PHANTOMJS.browser());
     		//return "phantomjs";
 		}
     	
     	if (browser.equals("safari")) {
-    		BrowserUtils.getInstance().setDriver(Browser.Browsers.SAFARI.browser());
+    		driver=BrowserUtils.getInstance().setDriver(Browser.Browsers.SAFARI.browser());
     		//return "phantomjs";
 		}
-		return browser;
+    	driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+		driver.get(EnvSetUP.getInstance().getproperties("baseurl"));
+		
+		return driver;
         
 	} 
 
