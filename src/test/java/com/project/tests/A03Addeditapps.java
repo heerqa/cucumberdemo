@@ -155,7 +155,7 @@ public void myapp_is_not_displayed() throws Throwable {
 	@Then("^edit app page is displayed$")
 	public void edit_app_page_is_displayed() throws Throwable {
 		appDetailsPage = new AppDetailsPage(driver);
-		Assert.assertEquals(name, appDetailsPage.getAppName());
+		Assert.assertEquals("Editing: "+name, appDetailsPage.getAppName());
 	}
 
 	@When("^click on edit$")
