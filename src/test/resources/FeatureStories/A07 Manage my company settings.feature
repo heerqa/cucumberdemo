@@ -9,3 +9,4 @@ Scenario: verify the company profile name updating function
 	When open the company page
 	Then all the field should be populated as per update
 	
+	

@@ -17,7 +17,8 @@ public class HomePage {
 	
 	@FindBy(linkText = "Company")
 	WebElement company;
-
+	
+	
 	@FindBy(css = "div.alert.alert-info")
 	WebElement successMsg;
 
@@ -27,18 +28,21 @@ public class HomePage {
 	}
 
 	public void clickCompany() throws Throwable {
-		logger.info("clickCompany method is running");
+	
 		company.click();
 		logger.info("click on Company link");
 		
 		Thread.sleep(4000);
 	
 	}
-
+	
+	
 	public String getSuccessMsg() {
 
 		return successMsg.getText();
 
 	}
+	
+
 
 }

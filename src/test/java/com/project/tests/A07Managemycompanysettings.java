@@ -1,30 +1,21 @@
 package com.project.tests;
 
-import java.io.File;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 
-
-
 import org.junit.Assert;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriverService;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.safari.SafariDriver;
 
-
-
-import com.project.common.Browser;
+import com.project.common.BrowserUtils;
 import com.project.common.CommonMethods;
 import com.project.common.EnvSetUP;
-import com.project.common.FileUtils;
 import com.project.pages.CompanyProfile;
 import com.project.pages.HomePage;
 import com.project.pages.LoginPage;
+
+
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -32,9 +23,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class DefectAutomationTest {
+public class A07Managemycompanysettings {
 
-	static final Logger logger = Logger.getLogger(DefectAutomationTest.class);
+	static final Logger logger = Logger.getLogger(A07Managemycompanysettings.class);
 	//test data to be used for all the test in this class
 	Random rand = new Random();
 	int num=rand.nextInt((99999 - 11111) + 1) + 11111;
@@ -47,7 +38,7 @@ public class DefectAutomationTest {
 	final String strphone="88889"+String.valueOf(num);
 	final String strcountry="India";
 
-	public DefectAutomationTest() throws Throwable{};
+	public A07Managemycompanysettings() throws Throwable{};
 	
 	
 	
@@ -56,32 +47,27 @@ public class DefectAutomationTest {
 	HomePage homePage;
 	CompanyProfile companyProfile;
 
-	@Before
-	public void setUp() throws Throwable {
-		
-		String strEail=EnvSetUP.getInstance().getproperties("email");
-		String strPass=EnvSetUP.getInstance().getproperties("password");
-		driver= CommonMethods.createDriver();
-		LoginPage loginPage=new LoginPage(driver);
-		loginPage.login(strEail, strPass);
-		
-	}
 
-	@After
-	public void tearDown() {
-		driver.quit();
-	}
-
+	
 	@Given("^User is on Home page$")
 	public void user_is_on_Home_page() throws Throwable {
-		HomePage homePage= new HomePage(driver);
-		Assert.assertTrue(homePage.getSuccessMsg().contains("Signed in successfully"));
+		String strEail = EnvSetUP.getInstance().getproperties("emailownner");
+		String strPass = EnvSetUP.getInstance().getproperties("password");
+		driver=BrowserUtils.getInstance().getDriver();
+		loginPage = new LoginPage(driver);
+		loginPage.login(strEail, strPass);
+		System.out.println("---------------------------Home_page()");	
+		
+
+		homePage = new HomePage(driver);
+		Assert.assertTrue(homePage.getSuccessMsg().contains(
+				"Signed in successfully"));
 	 
 	}
 
 	@When("^user click on Company link$")
 	public void user_click_on_Company_link() throws Throwable {
-		HomePage homePage= new HomePage(driver);
+		homePage= new HomePage(driver);
 		homePage.clickCompany();
 	    
 	}
@@ -109,20 +95,20 @@ public class DefectAutomationTest {
 
 	@Then("^success message is displayed$")
 	public void success_message_is_displayed() throws Throwable {
-		HomePage homePage=new HomePage(driver);
+		homePage=new HomePage(driver);
 		Assert.assertTrue(homePage.getSuccessMsg().contains("Company was updated successfully"));
 	   
 	}
 
 	@When("^open the company page$")
 	public void open_the_company_page() throws Throwable {
-		HomePage homePage=new HomePage(driver);
+		homePage=new HomePage(driver);
 		homePage.clickCompany();
 	}
 
 	@Then("^all the field should be populated as per update$")
 	public void all_the_field_should_be_populated_as_per_update() throws Throwable {
-	    CompanyProfile companyProfile= new CompanyProfile(driver);
+	  companyProfile= new CompanyProfile(driver);
 	    logger.info(companyProfile.getCountry());
 	    Assert.assertEquals(newname, companyProfile.getCompName());
 	    Assert.assertEquals(strnewemail, companyProfile.getEmail());
@@ -133,5 +119,7 @@ public class DefectAutomationTest {
 	    Assert.assertEquals(strphone, companyProfile.getPhone());
 	    
 	}
+	
+
 
 }
