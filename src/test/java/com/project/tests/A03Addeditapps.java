@@ -1,6 +1,7 @@
 package com.project.tests;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.openqa.selenium.WebDriver;
 
 import com.project.common.BrowserUtils;
@@ -159,6 +160,7 @@ public void myapp_is_not_displayed() throws Throwable {
 	}
 
 	@When("^click on edit$")
+
 	public void click_on_edit() throws Throwable {
 		appDetailsPage = new AppDetailsPage(driver);
 		appDetailsPage.clickEdit();

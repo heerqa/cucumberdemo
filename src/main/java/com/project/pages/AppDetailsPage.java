@@ -25,10 +25,10 @@ public class AppDetailsPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickEdit(){
+	public void clickEdit() throws InterruptedException{
 		logger.info("click on edit button");
 		edit.click();
-		
+		Thread.sleep(4000);
 	}
 	public String getAppName(){
 		logger.info("get app name");
