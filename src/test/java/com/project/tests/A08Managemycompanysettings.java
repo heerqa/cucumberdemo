@@ -23,9 +23,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class A07Managemycompanysettings {
+public class A08Managemycompanysettings {
 
-	static final Logger logger = Logger.getLogger(A07Managemycompanysettings.class);
+	static final Logger logger = Logger.getLogger(A08Managemycompanysettings.class);
 	//test data to be used for all the test in this class
 	Random rand = new Random();
 	int num=rand.nextInt((99999 - 11111) + 1) + 11111;
@@ -38,7 +38,7 @@ public class A07Managemycompanysettings {
 	final String strphone="88889"+String.valueOf(num);
 	final String strcountry="India";
 
-	public A07Managemycompanysettings() throws Throwable{};
+	public A08Managemycompanysettings() throws Throwable{};
 	
 	
 	

@@ -129,7 +129,7 @@ public class CommonMethods {
 	}
 	
 	public static WebDriver createDriver(){
-	   	System.out.println(" --------------------------------- createDriver ");
+	  
     	String browser =EnvSetUP.getInstance().getproperties("browser") ;
     	
     	if (browser.equals("firefox")) {

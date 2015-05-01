@@ -32,9 +32,28 @@ public class ApplicationMenus {
 		
 	}
 	
+	public void clickEarning() throws Throwable{
+		logger.info("Click on Earning link on home page");
+		if (CommonMethods.ifElementPresent(By.linkText("Earnings"))) {
+			driver.findElement(By.linkText("Earnings")).click();
+					
+		}
+		
+		
+	}
+	
 	public boolean isMyAppDisplayed() throws Throwable{
 		boolean present= false;
 		if (CommonMethods.ifElementPresent(By.linkText("My Apps"))) {
+			present=true;
+					
+		}
+		return present;
+	}
+	
+	public boolean isEarningDisplayed() throws Throwable{
+		boolean present= false;
+		if (CommonMethods.ifElementPresent(By.linkText("Earnings"))) {
 			present=true;
 					
 		}
