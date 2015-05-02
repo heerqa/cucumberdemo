@@ -1,6 +1,11 @@
 package com.project.pages;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
+import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,14 +17,17 @@ import com.project.common.CommonMethods;
 
 public class CompanyProfile {
 	static final Logger logger = Logger.getLogger(CompanyProfile.class);
-	WebDriver driver;
 	
+	WebDriver driver;
 	public CompanyProfile(WebDriver driver){
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		
 		}
 	
+	
+	
+	 
 	@FindBy(id="company_name")
 	WebElement compName;
 	
@@ -42,6 +50,7 @@ public class CompanyProfile {
 	WebElement phone;
 	
 
+	
 
 	public String getCompName() {
 		return compName.getAttribute("value");
@@ -138,6 +147,6 @@ public class CompanyProfile {
 		logger.info("edited the company name");
 		
 	}
-		
-
+	
+	
 }
