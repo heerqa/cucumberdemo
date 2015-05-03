@@ -28,7 +28,7 @@ public class A07Readappandcompanyearnings {
 	public void page_name_is_Apps_Earnings() throws Throwable {
 		driver=BrowserUtils.getInstance().getDriver();
 		earningPage= new EarningPage(driver);
-		Assert.assertEquals("Apps Earnings", earningPage.getPageName());
+		Assert.assertEquals("Monthly Earnings", earningPage.getPageName());
 	}
 
 	
