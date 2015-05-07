@@ -18,6 +18,13 @@ public class LoginPage {
 	@FindBy(id="user_password")
 	WebElement password;
 	
+	@FindBy(id="admin_email")
+	WebElement adminemail;
+	
+	@FindBy(id="admin_password")
+	WebElement adminpassword;
+	
+	
 	@FindBy(name="commit")
 	WebElement submitBtn;
 	
@@ -31,6 +38,18 @@ public class LoginPage {
 
 	public void setPassword(String strPassword) {
 		password.sendKeys(strPassword);
+		
+	}
+	
+
+	public void setAdminEmail(String strEmail) {
+		adminemail.sendKeys(strEmail);
+	}
+
+
+
+	public void setAdminPassword(String strPassword) {
+		adminpassword.sendKeys(strPassword);
 		
 	}
 
@@ -72,6 +91,23 @@ public class LoginPage {
 		
 		Thread.sleep(4000);
 	}
+	
+	public void adminLogin(String strEail, String strPass) throws Throwable{
+		logger.info("Login method is called");
+		setAdminEmail(strEail);
+		logger.info("enter email");
+		
+		setAdminPassword(strPass);
+		logger.info("enter password");
+		
+		
+		clickSubmitBtn();
+		logger.info("click submit button");
+		
+		
+		Thread.sleep(4000);
+	}
+
 
 
 

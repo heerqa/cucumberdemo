@@ -1,4 +1,4 @@
-Feature: Verify that Owner is able to add developer of financer as new user for the company
+Feature: Verify that Owner is able to add developer or financer as new user for the company
 
 Scenario: Verify that Owner is able to add new user as developer
 		Given User is on Home page

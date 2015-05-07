@@ -60,5 +60,23 @@ public class ApplicationMenus {
 		return present;
 	}
 
+	public void clickDemoConnection() throws Throwable{
+		logger.info("Click on MyApp link on home page");
+		if (CommonMethods.ifElementPresent(By.linkText("Demo Connections"))) {
+			driver.findElement(By.linkText("Demo Connections")).click();
+					
+		}
+		
+		
+	}
+	
+	public boolean isDemoConnectionDisplayed() throws Throwable{
+		boolean present= false;
+		if (CommonMethods.ifElementPresent(By.linkText("Demo Connections"))) {
+			present=true;
+					
+		}
+		return present;
+	}
 
 }
