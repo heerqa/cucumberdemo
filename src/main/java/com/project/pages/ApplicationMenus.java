@@ -78,5 +78,14 @@ public class ApplicationMenus {
 		}
 		return present;
 	}
+	
+	public boolean isCompanyDisplayed() throws Throwable{
+		boolean present= false;
+		if (CommonMethods.ifElementPresent(By.linkText("Company"))) {
+			present=true;
+					
+		}
+		return present;
+	}
 
 }
