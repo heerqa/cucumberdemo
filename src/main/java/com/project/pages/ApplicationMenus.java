@@ -24,8 +24,8 @@ public class ApplicationMenus {
 
 	public void clickMyApp() throws Throwable{
 		logger.info("Click on MyApp link on home page");
-		if (CommonMethods.ifElementPresent(By.linkText("My Apps"))) {
-			driver.findElement(By.linkText("My Apps")).click();
+		if (CommonMethods.ifElementPresent(By.linkText("Published Apps"))) {
+			driver.findElement(By.linkText("Published Apps")).click();
 					
 		}
 		
@@ -44,7 +44,7 @@ public class ApplicationMenus {
 	
 	public boolean isMyAppDisplayed() throws Throwable{
 		boolean present= false;
-		if (CommonMethods.ifElementPresent(By.linkText("My Apps"))) {
+		if (CommonMethods.ifElementPresent(By.linkText("Published Apps"))) {
 			present=true;
 					
 		}

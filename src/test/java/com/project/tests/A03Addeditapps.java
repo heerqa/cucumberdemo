@@ -204,7 +204,7 @@ public void myapp_is_not_displayed() throws Throwable {
 	@Then("^App listing page is displayed$")
 	public void app_listing_page_is_displayed() throws Throwable {
 		listingAppsPage = new ListingAppsPage(driver);
-		Assert.assertEquals("Listing Apps", listingAppsPage.getPageName());
+		Assert.assertEquals("Published Apps", listingAppsPage.getPageName());
 	}
 
 	@Then("^app name is updated$")
