@@ -1,0 +1,113 @@
+12:34:46,652 INFO  [LoginPage] Login method is called
+12:35:28,497 INFO  [LoginPage] enter email
+12:35:28,790 INFO  [LoginPage] enter password
+12:35:31,119 INFO  [LoginPage] click submit button
+12:35:35,261 INFO  [ApplicationMenus] Click on MyApp link on home page
+12:36:05,700 INFO  [ApplicationMenus] Click on MyApp link on home page
+12:45:07,148 INFO  [LoginPage] Login method is called
+12:45:36,712 INFO  [LoginPage] enter email
+12:45:36,990 INFO  [LoginPage] enter password
+12:45:39,070 INFO  [LoginPage] click submit button
+12:49:40,505 INFO  [LoginPage] Login method is called
+12:49:42,184 INFO  [LoginPage] enter email
+12:49:42,390 INFO  [LoginPage] enter password
+12:49:43,682 INFO  [LoginPage] click submit button
+12:57:33,146 INFO  [LoginPage] Login method is called
+12:57:41,823 INFO  [LoginPage] enter email
+12:57:42,074 INFO  [LoginPage] enter password
+12:57:43,357 INFO  [LoginPage] click submit button
+12:57:47,470 INFO  [ApplicationMenus] Click on MyApp link on home page
+12:57:52,647 INFO  [ListingAppsPage] Click on New APP button
+12:57:54,159 INFO  [NewAppPage] get page name
+12:57:54,549 INFO  [NewAppPage] select the plateform
+12:57:55,264 INFO  [NewAppPage] enter the store id
+12:57:55,684 INFO  [NewAppPage] enter the app name
+12:57:56,100 INFO  [NewAppPage] select the orientation
+12:57:56,980 INFO  [NewAppPage] click on create app button
+12:57:58,969 INFO  [AppDetailsPage] get app name
+12:57:59,483 INFO  [ApplicationMenus] Click on MyApp link on home page
+12:58:03,320 INFO  [ListingAppsPage] click on recent app
+12:58:05,752 INFO  [AppDetailsPage] get app name
+12:58:06,285 INFO  [AppDetailsPage] click on edit button
+12:58:11,264 INFO  [AppDetailsPage] get app name
+12:58:11,390 INFO  [NewAppPage] select the plateform
+12:58:12,130 INFO  [NewAppPage] enter the store id
+12:58:12,593 INFO  [NewAppPage] enter the app name
+12:58:13,082 INFO  [NewAppPage] select the orientation
+12:58:13,793 INFO  [NewAppPage] click on create app button
+12:58:15,426 INFO  [AppDetailsPage] get app name
+12:58:15,925 INFO  [AppDetailsPage] get app name
+12:58:16,077 INFO  [AppDetailsPage] click on back button
+13:10:54,374 INFO  [LoginPage] Login method is called
+13:11:01,312 INFO  [LoginPage] enter email
+13:11:01,775 INFO  [LoginPage] enter password
+13:11:12,211 INFO  [LoginPage] click submit button
+13:11:16,359 INFO  [ApplicationMenus] Click on MyApp link on home page
+13:11:16,900 INFO  [ListingAppsPage] Click on New APP button
+13:11:19,687 INFO  [NewAppPage] get page name
+13:11:21,425 INFO  [NewAppPage] select the plateform
+13:11:22,619 INFO  [NewAppPage] enter the store id
+13:11:23,303 INFO  [NewAppPage] enter the app name
+13:11:23,973 INFO  [NewAppPage] select the orientation
+13:11:25,031 INFO  [NewAppPage] click on create app button
+13:11:27,232 INFO  [AppDetailsPage] get app name
+13:11:27,801 INFO  [ApplicationMenus] Click on MyApp link on home page
+13:11:32,650 INFO  [ListingAppsPage] click on recent app
+13:11:33,245 INFO  [AppDetailsPage] get app name
+13:11:33,764 INFO  [AppDetailsPage] click on edit button
+13:11:38,171 INFO  [AppDetailsPage] get app name
+13:11:38,314 INFO  [NewAppPage] select the plateform
+13:11:39,362 INFO  [NewAppPage] enter the store id
+13:11:40,047 INFO  [NewAppPage] enter the app name
+13:11:40,627 INFO  [NewAppPage] select the orientation
+13:11:41,645 INFO  [NewAppPage] click on create app button
+13:11:43,184 INFO  [AppDetailsPage] get app name
+13:11:43,745 INFO  [AppDetailsPage] get app name
+13:11:43,975 INFO  [AppDetailsPage] click on back button
+13:15:16,884 INFO  [LoginPage] Login method is called
+13:15:20,249 INFO  [LoginPage] enter email
+13:15:20,534 INFO  [LoginPage] enter password
+13:15:22,294 INFO  [LoginPage] click submit button
+13:19:04,372 INFO  [LoginPage] Login method is called
+13:19:11,267 INFO  [LoginPage] enter email
+13:19:11,546 INFO  [LoginPage] enter password
+13:19:14,557 INFO  [LoginPage] click submit button
+13:19:18,690 INFO  [ApplicationMenus] Click on Earning link on home page
+13:20:36,673 INFO  [LoginPage] Login method is called
+13:20:39,345 INFO  [LoginPage] enter email
+13:20:39,623 INFO  [LoginPage] enter password
+13:20:41,963 INFO  [LoginPage] click submit button
+13:20:46,089 INFO  [ApplicationMenus] Click on Earning link on home page
+13:22:06,280 INFO  [LoginPage] Login method is called
+13:22:09,547 INFO  [LoginPage] enter email
+13:22:09,883 INFO  [LoginPage] enter password
+13:22:11,206 INFO  [LoginPage] click submit button
+13:24:41,847 INFO  [LoginPage] Login method is called
+13:24:46,849 INFO  [LoginPage] enter email
+13:24:47,122 INFO  [LoginPage] enter password
+13:24:49,462 INFO  [LoginPage] click submit button
+13:24:53,886 INFO  [HomePage] click on Company link
+13:25:08,147 INFO  [HomePage] click on Company link
+13:25:20,778 INFO  [A08Managemycompanysettings] India
+13:26:33,378 INFO  [LoginPage] Login method is called
+13:26:43,881 INFO  [LoginPage] enter email
+13:26:44,200 INFO  [LoginPage] enter password
+13:26:46,605 INFO  [LoginPage] click submit button
+13:26:51,009 INFO  [HomePage] click on Company link
+13:27:42,243 INFO  [LoginPage] Login method is called
+13:27:49,559 INFO  [LoginPage] enter email
+13:27:49,832 INFO  [LoginPage] enter password
+13:27:51,216 INFO  [LoginPage] click submit button
+13:27:55,619 INFO  [HomePage] click on Company link
+13:29:13,249 INFO  [LoginPage] Login method is called
+13:29:16,028 INFO  [LoginPage] enter email
+13:29:16,333 INFO  [LoginPage] enter password
+13:29:17,661 INFO  [LoginPage] click submit button
+13:31:41,909 INFO  [LoginPage] Login method is called
+13:31:46,381 INFO  [LoginPage] enter email
+13:31:46,670 INFO  [LoginPage] enter password
+13:31:48,932 INFO  [LoginPage] click submit button
+13:33:44,066 INFO  [LoginPage] Login method is called
+13:33:45,401 INFO  [LoginPage] enter email
+13:33:45,691 INFO  [LoginPage] enter password
+13:33:46,971 INFO  [LoginPage] click submit button

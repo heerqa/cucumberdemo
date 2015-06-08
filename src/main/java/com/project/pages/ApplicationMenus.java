@@ -60,6 +60,25 @@ public class ApplicationMenus {
 		return present;
 	}
 
+	public boolean isPromotedAppDisplayed() throws Throwable{
+		boolean present= false;
+		if (CommonMethods.ifElementPresent(By.linkText("Promoted Apps"))) {
+			present=true;
+					
+		}
+		return present;
+	}
+	
+	public void clickPromotedApp() throws Throwable{
+		logger.info("Click on MyApp link on home page");
+		if (CommonMethods.ifElementPresent(By.linkText("Promoted Apps"))) {
+			driver.findElement(By.linkText("Promoted Apps")).click();
+					
+		}
+		
+		
+	}
+
 	public void clickDemoConnection() throws Throwable{
 		logger.info("Click on MyApp link on home page");
 		if (CommonMethods.ifElementPresent(By.linkText("Demo Connections"))) {
